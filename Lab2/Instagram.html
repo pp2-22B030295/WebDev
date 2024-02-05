@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <style>
+        body{
+            background-color: #f8f8f8;
+            display: flex;
+            align-items: center;
+        }
+        .authorization-sheet{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border: 1px solid #dddddd;
+            padding: 30px;
+            width: 256px;
+            height: 290px;
+        }
+        .line {
+            height: 1.5px;
+            background-color: #ccc;
+            margin-bottom: 13px;
+            z-index: 1;
+            width: 100px;
+        }
+        #Instagram-text{
+            position: relative;
+            top: -40px ;
+        }
+        .enter-button{
+            background-color: rgba(0, 56, 238, 0.86);
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            width: 270px;
+            font-size: 15px;
+            padding:7px;
+            position: relative;
+            top: -10px;
+        }
+        .input{
+            border-radius: 2px;
+            width: 250px;
+            color: rgba(144,148,156,0.73);
+            font-size: 12px;
+            padding: 7px;
+            border: 1px solid rgba(201, 202, 208, 0.73);
+            background-color: #fafafa;
+            margin: 3px;
+            position: relative;
+            top: -20px;
+        }
+        .forgot-password{
+            color: rgb(44, 84, 126);
+            text-decoration: none;
+            font-size: 15px;
+            position: relative;
+            top: 10px;
+        }
+        .or-text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-family: 'Open Sans', sans-serif;
+            color: #8c8c8c;
+            font-size: 12px;
+        }
+        .pr-word{
+            margin-right: 9px;
+            margin-left: 9px;
+        }
+        #sign-up-link{
+            color: rgb(59, 172, 246);
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .sign-up{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            width: 276px;
+            height: 10px;
+            margin-top: 10px;
+        }
+        .sign-up-text{
+            position: relative;
+            top: -20px;
+        }
+        #img1{
+
+            position: absolute;
+            top: 18%;
+            left: 35%;
+            z-index: 1;
+        }
+        #img2{
+
+            position: absolute;
+            top: 19%;
+            left: 38%;
+            z-index: 2;
+        }
+        .right-part{
+            position: absolute;
+            top: 20%;
+            right: 30%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="left-part">
+        <img id="img1" src="image/screenshot1.png" alt="screen1">
+        <img id="img2" src="image/screenshot2.png" alt="screen2">
+    </div>
+    <div class="right-part">
+        <div class="authorization-sheet">
+            <i id="Instagram-text" data-visualcompletion="css-img" aria-label="Instagram" class="" role="img" style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png&quot;); background-position: 0px -52px; background-size: auto; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;"></i>
+            <input type="text" class="input margin-for-inputs" name="email-phone" placeholder="Номер телефона, имя пользователя или...">
+            <input type="text" class="input margin-for-inputs" name="password" placeholder="Пароль">
+            <button class="margin-for-inputs enter-button">Войти</button>
+            <div class="or-text">
+                <p class="line"></p>
+                <p class="pr-word">  ИЛИ  </p>
+                <p class="line"></p>
+            </div>
+            <a class="margin-for-inputs forgot-password" href="https://chat.openai.com/">Забыли пароль?</a>
+        </div>
+
+        <div class="sign-up">
+            <p class="sign-up-text">У вас нет аккаунта? <a id="sign-up-link" href="http://">Зарегистрироваться</a></p>
+        </div>
+
+    </div>
+</body>
+</html>

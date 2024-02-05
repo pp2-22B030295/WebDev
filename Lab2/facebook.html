@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+    <style>
+        body{
+            background-color: rgb(238, 240, 243);
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            cursor: pointer;
+        }
+        .facebook{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 390px;
+            height: 36%;
+            font-size: 24px;
+            position: absolute;
+            top: 51px;
+            left: 2.75%;
+        }
+        .facebook-image{
+            position: relative;
+            top: 79px;
+            left: -49px;
+            width: 320px;
+            height: 360px;
+        }
+
+        .input-part {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 140px;
+            right: -55%;
+            width: 410px;
+            height: 340px;
+            border-radius: 4px;
+            padding: 7px;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-color: white;
+        }
+        .margin-for-inputs{
+            margin: 9px;
+        }
+
+        .input{
+            border-radius: 7px;
+            width: 350px;
+            color: rgba(144,148,156,0.73);
+            font-size: 16px;
+            padding: 14px;
+            border: 1px solid rgba(201, 202, 208, 0.73);
+        }
+        .forgot-password{
+            color: rgba(0,0,238,0.73);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .enter-button{
+            background-color: rgba(0, 56, 238, 0.86);
+            color: #ffffff;
+            border: none;
+            border-radius: 7px;
+            width: 381px;
+            font-size: 22px;
+            padding: 10px;
+        }
+        .create-new-account{
+            background-color: #42b72a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            height: 48px;
+            font-size: 16px;
+            padding: 13px;
+            font-weight: bold;
+        }
+        .line {
+            height: 1px;
+            background-color: #ccc;
+            margin-bottom: 13px;
+            z-index: 1;
+            width: 350px;
+        }
+        #a-bold{
+            color: black;
+            text-decoration: none;
+        }
+        .right-part{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 270px;
+            top: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="facebook">
+    <img class="facebook-image" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
+    <p>
+        Facebook помогает вам всегда<br>
+        оставаться на связи и общаться<br>
+        со своими знакомыми.
+    </p>
+</div>
+<div class="right-part">
+    <div class="input-part">
+        <input type="text" class="input margin-for-inputs" name="email-phone" placeholder="Электронный адресс или номер телефона">
+        <input type="text" class="input margin-for-inputs" name="password" placeholder="Пароль">
+        <button class="margin-for-inputs enter-button">Вход</button>
+        <a class="margin-for-inputs forgot-password" href="https://chat.openai.com/">Забыли пароль?</a>
+        <div class="line"></div>
+        <button class="margin-for-inputs create-new-account">Создать новый аккаунт</button>
+    </div>
+    <p class="under-input">
+        <a id="a-bold" href="https://chat.openai.com"><b>Создать Страницу</b></a> знаменитости, музыкальной группы или компании.
+    </p>
+</div>
+</body>
+</html>
