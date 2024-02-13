@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="todo-style.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="todo-header">
+        <p>ToDo List</p>
+    </div>
+    <div class="todo-container">
+        <h1 id="todo-cont-text">ToDo List</h1>
+
+        <input type="text" id="todo-input" placeholder="New Task">
+        <button onclick="addItem()">Add</button>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script>
+
+        function addItem() {
+            var inputValue = document.getElementById("todo-input").value;
+            if (inputValue === '') {
+                alert("You must write something!");
+                return;
+            }
+            var li = document.createElement("li");
+            li.className = "todo-item";
+            var checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.onclick = function() {
+                li.classList.toggle("done");
+            };
+            var label = document.createElement("label");
+            label.appendChild(checkbox);
+            var textNode = document.createTextNode(inputValue);
+            label.appendChild(textNode);
+            li.appendChild(label);
+
+            var deleteIcon = document.createElement("span");
+            deleteIcon.className = "delete-icon";
+            deleteIcon.innerHTML = "&#128465;"; // Unicode for trash can icon
+            deleteIcon.onclick = function() {
+                li.remove();
+            };
+            li.appendChild(deleteIcon);
+
+            document.getElementById("todo-list").appendChild(li);
+            document.getElementById("todo-input").value = "";
+        }
+    </script>
+
+</body>
+</html>

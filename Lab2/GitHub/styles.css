@@ -1,0 +1,66 @@
+body{
+    background-color: #0d1117;
+}
+.header-menu-items{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-menu-button{
+    margin: 8px;
+    border: none;
+    color: #f8f8fc;
+    background-color: #0d1117;
+    cursor: pointer;
+}
+.header-menu-sign-button{
+    position: absolute;
+    right: 10px;
+}
+.header-menu-sighUp-button{
+    margin: 8px;
+    border: black;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+#git-icon{
+    cursor:pointer;
+    height:32px;
+}
+#search-input {
+    background-color: rgb(84, 91, 107);
+    border: 1px solid rgba(248, 248, 252, 0.62);
+    border-radius: 4px;
+}
+#line-git-image {
+    height: 100%;
+    position: relative;
+    left: 15%;
+    top: 140px;
+}
+h1{
+    color: white;
+    font-size: 94px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder ;
+}
+
+.mein-right-part{
+    position: relative;
+    left: 13%;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-menu-items{
+    height: 80%;
+    display: flex;
+
+
+}
