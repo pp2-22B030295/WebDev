@@ -1,0 +1,21 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6" *ngFor='let prd of products'>
+      <div class="product-card">
+        <img class="card-img" src="assets/comp1.jpg" alt="{{prd.name + ' image'}}">
+        <div class="product-info">
+          <h4 class="product-text-info">{{prd.name}}</h4>
+          <p class="product-text-info">{{prd.description}}</p>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-outline-info" type="button" (click)="navigateByUrl('https://kaspi.kz/shop/')">Buy</button><br>
+          <div class="d-flex">
+            <button class="btn btn-outline-info btn-whatsapp mr-2" type="button" (click)="navigateByUrl('https://web.whatsapp.com/')"><img src="assets/whatsapp-icon.png" class="icon">Whatsapp</button>
+            <button class="btn btn-outline-info btn-telegram" type="button" (click)="navigateByUrl('https://web.telegram.org/k/')"><img src="assets/tel.png" class="icon">Telegram</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

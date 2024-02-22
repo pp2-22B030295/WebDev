@@ -1,0 +1,22 @@
+.btn-whatsapp{
+  color: #189c0e;
+  border-color: #189c0e;
+}
+.icon{
+  height: 30px;
+  margin-right: 3px;
+}
+.btn{
+  margin: 10px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+.product-text-info{
+  display: flex;
+  justify-content: left;
+}
+.card-img{
+  height: 200px;
+}
