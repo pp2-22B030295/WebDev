@@ -1,0 +1,20 @@
+<ul>
+  <li *ngFor="let prd of category.products">
+    <div>
+      <div class="product-card">
+        <img class="card-img" src="{{prd.img}}" alt="{{prd.name + ' image'}}">
+        <div class="product-info">
+          <h4 class="product-text-info">{{prd.name}}   <label class="label">+{{prd.likes}}</label></h4>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-outline-info" type="button" (click)="navigateByUrl('https://laptopshop.kz/')">Buy</button><br>
+
+          <div class="d-flex">
+            <button class="btn btn-success" (click)="like()">Like</button>
+            <button class="btn btn-danger" (click)="remove()">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
