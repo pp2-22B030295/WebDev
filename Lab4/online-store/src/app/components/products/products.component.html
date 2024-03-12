@@ -3,16 +3,20 @@
   <div class="row">
     <div class="col-md-6" *ngFor='let prd of products'>
       <div class="product-card">
-        <img class="card-img" src="assets/comp1.jpg" alt="{{prd.name + ' image'}}">
+        <img class="card-img" src="{{prd.img}}" alt="{{prd.name + ' image'}}">
         <div class="product-info">
           <h4 class="product-text-info">{{prd.name}}</h4>
           <p class="product-text-info">{{prd.description}}</p>
         </div>
         <div class="buttons">
-          <button class="btn btn-outline-info" type="button" (click)="navigateByUrl('https://kaspi.kz/shop/')">Buy</button><br>
+          <button class="btn btn-outline-info" type="button" (click)="navigateByUrl('{{prd.url}}')">Buy</button><br>
+
           <div class="d-flex">
-            <button class="btn btn-outline-info btn-whatsapp mr-2" type="button" (click)="navigateByUrl('https://web.whatsapp.com/')"><img src="assets/whatsapp-icon.png" class="icon">Whatsapp</button>
-            <button class="btn btn-outline-info btn-telegram" type="button" (click)="navigateByUrl('https://web.telegram.org/k/')"><img src="assets/tel.png" class="icon">Telegram</button>
+            <button class="btn btn-outline-info btn-whatsapp mr-2" type="button" (click)="navigateByUrl('https://web.whatsapp.com/')"><img src="assets/whatsapp-icon.png" class="icon" alt="">Whatsapp</button>
+            <button class="btn btn-outline-info btn-telegram" type="button" (click)="navigateByUrl('https://web.telegram.org/k/')"><img src="assets/tel.png" class="icon" alt="">Telegram</button>
+
+            <a [href]="'https://web.telegram.org/k/#-1626471953' + encodeURIComponent('https://web.telegram.org/k/#-1626471953') + '&text=' + encodeURIComponent('Ваш текст сообщения ')" target="_blank">Telegram</a>
+
           </div>
         </div>
       </div>
