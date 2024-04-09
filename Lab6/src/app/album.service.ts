@@ -8,6 +8,7 @@ import { User } from './user';
 
 @Injectable({
   providedIn: 'root'
+
 })
 export class AlbumService{
   private static apiUrl = "https://jsonplaceholder.typicode.com"

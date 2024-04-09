@@ -29,3 +29,8 @@
 .album-info a{
     margin-top: 20px;
 }
+.album-title{
+  font-size: 32px;
+  display: flex;
+  width: 500px;
+}
